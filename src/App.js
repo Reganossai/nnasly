@@ -1,3 +1,4 @@
+import Carousel from './components/Carousel';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
      <Navbar/>
+     <Carousel/>
       </header>
     </div>
   );
