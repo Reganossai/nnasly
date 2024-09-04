@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -12,60 +12,62 @@
 
 #carousel {
   width: 100%;
-  height: 100vh;
-  opacity: 0.5;
+  height: 120vh;
+  opacity: 0.7;
   z-index: 1;
 }
 
-#left{
+#left {
   margin: 100px 0px 0px 0px;
   background-color: black;
   height: 110px;
   width: 50px;
 }
 
-#right{
+#right {
   margin: 100px 0px 0px 0px;
   background-color: black;
   height: 110px;
   width: 50px;
 }
 
-#text-one h1{
+#text-one h1 {
   margin: -400px 0px 50px 0px;
   color: red;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 60px;
   z-index: 99;
 }
 
 
-#text-one p{
-  
-  font-weight: 700;
+#text-one p {
+
+  font-weight: 600;
   font-size: 20px;
   z-index: 99;
+  color: green;
 }
 
 
-#text-two h1{
+#text-two h1 {
   margin: -400px 0px 50px 0px;
   color: red;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 60px;
   z-index: 99;
 }
 
 
-#text-two p{
-  
-  font-weight: 700;
+#text-two p {
+
+  font-weight: 600;
   font-size: 20px;
+  color: green;
   z-index: 99;
 }
 
-#shop-now{
-  color: white;
+#shop-now {
+  color: green;
   font-size: 20px;
   padding: 5px 15px 5px 15px;
 }
@@ -73,23 +75,56 @@
 
 /* NAVBAR */
 
-nav{
+nav {
   display: flex;
   background-color: lightgoldenrodyellow;
 }
 
-.logo{
-  margin: 10px 250px 0px 100px;
+.logo {
+  margin: 5px 350px 5px 150px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
 }
 
-.navbarSupportedContent{
+#navbarSupportedContent {
   display: flex;
   list-style-type: none;
   margin: 10px 0px 0px 0px;
+
 }
 
-.navbarSupportedContent li{
+#navbarSupportedContent li {
   margin: 0px 20px 0px 20px;
   padding: 5px;
 }
 
+#navbarSupportedContent li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.zaracho{
+  display: none;
+}
+
+
+/* Styles for tablet devices */
+@media (max-width: 1100px) {
+   .zaracho{
+    display: block;
+   }
+
+ 
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+  .zaracho{
+    display: block;
+  }
+
+  
+ 
+}

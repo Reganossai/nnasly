@@ -1,13 +1,14 @@
-import Carousel from './components/Carousel';
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./Pages/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-     <Navbar/>
-     <Carousel/>
-      </header>
+      <BrowserRouter>
+      <Routes>
+     <Route exact path="/" element={<LandingPage />} />
+     </Routes>
+     </BrowserRouter>
     </div>
   );
 }
