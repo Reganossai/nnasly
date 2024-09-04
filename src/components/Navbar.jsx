@@ -64,37 +64,31 @@ const Navbar = () => {
 
             <li>
               <Link to="/">
-              <FontAwesomeIcon icon={faFutbol} />  Scores
+              <FontAwesomeIcon icon={faFutbol} />  ABOUT US
               </Link>
             </li>
 
             <li>
               <Link to="/standings">
-              <FontAwesomeIcon icon={faChartSimple}  className="font"/> Standings
+              <FontAwesomeIcon icon={faChartSimple}  className="font"/> MEAT
               </Link>
             </li>
 
             <li>
               <Link to="/top-scorers">
-              <FontAwesomeIcon icon={faArrowAltCircleUp}  className="font"/> Top Scorers
+              <FontAwesomeIcon icon={faArrowAltCircleUp}  className="font"/> BUY 
               </Link>
             </li>
-
-            <li>
-              <Link to="/history">
-              <FontAwesomeIcon icon={faClockRotateLeft} /> League History
-              </Link>
-            </li>
-
+            
             <li>
               <Link to="/about">
-              <FontAwesomeIcon icon={faSuitcase} /> About
+              <FontAwesomeIcon icon={faSuitcase} /> SERVICES
               </Link>
             </li>
 
             <li>
               <Link to="/contact">
-              <FontAwesomeIcon icon={faAddressCard} />  Contact
+              <FontAwesomeIcon icon={faAddressCard} />  CONTACT
               </Link>
             </li>
           </ul>

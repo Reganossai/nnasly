@@ -42,7 +42,7 @@ const Carousel = () => {
   <div className="carousel-inner">
     <div className={`carousel-item ${activeIndex === 0 ? 'active' : ''}`}>
       <img src={images[currentImageIndex]} id="carousel" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block" id='text-one'>
+      <div className="carousel-caption" id='text-one'>
         <h1>BUILD A SUSTAINABLE FUTURE</h1>
         <p>FOR PASTORAL LANDSCAPES AND SMALL FARMERS</p>
       <button id="shop-now" className="btn btn-outline-success">Learn more</button>
@@ -50,7 +50,7 @@ const Carousel = () => {
     </div>
     <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
       <img src={imagess[currentImageIndex]} id="carousel" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block" id='text-two'>
+      <div className="carousel-caption" id='text-two'>
       <h1>GRASS FED, PASTURE RAISED CALIFORNIA LOCAL MEAT</h1>
       <p>FOR PASTORAL LANDSCAPES AND SMALL FARMERS</p>
       <button id="shop-now" className="btn btn-outline-success">Learn more</button>
