@@ -3,9 +3,33 @@
   padding: 0;
 }
 
-body{
+
+body {
   width: 100%;
 }
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(-2px, 2px);
+  }
+
+  50% {
+    transform: translate(2px, -2px);
+  }
+
+  75% {
+    transform: translate(-2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
 
 /* CAROUSEL */
 
@@ -17,7 +41,6 @@ body{
 #carousel {
   width: 100%;
   height: 120vh;
-  opacity: 1;
   z-index: 1;
 }
 
@@ -45,7 +68,6 @@ body{
 
 
 #text-one p {
-
   font-weight: 600;
   font-size: 20px;
   z-index: 99;
@@ -76,13 +98,18 @@ body{
   padding: 5px 15px 5px 15px;
 }
 
+#shop-now a{
+  color: green;
+  text-decoration: none;
+}
+
 
 /* NAVBAR */
 
 nav {
   display: flex;
   background-color: lightgoldenrodyellow;
-  
+
 }
 
 .logo {
@@ -97,6 +124,7 @@ nav {
   list-style-type: none;
   margin: 10px 0px 0px 0px;
 
+
 }
 
 #navbarSupportedContent li {
@@ -104,21 +132,235 @@ nav {
   padding: 5px;
 }
 
-#navbarSupportedContent li a{
+#navbarSupportedContent li a {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  padding: 0px 0px 5px 0px;
 }
 
-.zaracho{
+.zaracho {
+  display: none;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+
+/* ABOUT */
+.farm-about {
+  width: 100%;
+  height: 60vh;
+  opacity: 0.5;
+}
+
+.third-text {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+}
+
+.third-text h1 {
+  color: red;
+  font-weight: 900;
+  font-size: 60px;
+  z-index: 99;
+}
+
+
+.third-text p {
+  font-weight: 600;
+  font-size: 20px;
+  z-index: 99;
+  color: green;
+}
+
+.fourth-text {
+  display: inline-block;
+  animation: vibrate 1s infinite;
+}
+
+.fourth-text h4 {
+  color: #023020;
+  font-size: 16px;
+  background-color: lightgoldenrodyellow;
+  margin: 10px 10px 10px 10px;
+  padding: 30px 10px 30px 10px;
+  border-radius: 20px;
+  
+}
+
+
+.we-do {
+  padding: 0px 0px 80px 0px;
+  margin: 0px 0px 0px 100px;
+  width: 80%;
+}
+
+.we-do h1 {
+  text-align: center;
+  color: red;
+  font-weight: 800;
+  margin: 120px 0px 0px 0px;
+}
+
+.we-do h2 {
+  margin-top: -150px;
+  margin-left: 120px;
+  color: white;
+  font-weight: 900;
+}
+
+.we-do-sub {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.we-do-sub img {
+  width: 300px;
+  border-radius: 20px;
+  margin: 120px 0px 30px 30px;
+}
+
+.we-do-sub p {
+  width: 230px;
+  font-size: 16px;
+  color: red;
+  margin: 0px 0px 0px 90px;
+}
+
+.we-do-sub h6 {
+  width: 230px;
+  font-size: 16px;
+  color: red;
+  margin: 0px 0px 0px 30px;
+}
+
+.we-do-sub-sub {
+  margin: 0px 80px 0px 100px;
+  width: 30%;
+}
+
+
+
+/* FOOTER */
+
+.brasil {
+  position: absolute;
+  left: 0;
+  top: 1700px;
+  width: 280px;
+}
+
+
+.first-conti {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  padding: 20px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+  font-family: sans-serif;
+  background-color: lightgoldenrodyellow;
+
+}
+
+.ig {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 10px;
+
+}
+
+.whatsapp {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 10px;
+
+}
+
+.linkedin {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 10px;
+}
+
+.ig-div {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px 0px 20px;
+}
+
+.ig-div h5 {
+  font-size: 10px;
+}
+
+
+.whatsapp-div h5 {
+  font-size: 10px;
+}
+
+.linkedin-div h5 {
+  font-size: 10px;
+}
+
+.whatsapp-div {
+  margin: 10px 10px 0px 0px;
+  width: 80px;
+
+}
+
+.linkedin-div {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 800px 0px 0px;
+  width: 80px;
+
+}
+
+
+.hell {
+  text-align: center;
+  width: 350px;
+  margin: 5px 0px;
+}
+
+.hell img {
+  width: 70px;
+  border-radius: 10px;
+  margin: 80px 0px 0px 20px;
+}
+
+.kirk {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 0px 5px;
+}
+
+
+.linkss {
+  text-align: center;
+}
+
+.linkss h6 {
+  margin-top: 20px;
+}
+
+.lim {
   display: none;
 }
 
 
+
+
+
 /* Styles for tablet devices */
 @media (max-width: 1100px) {
-     /* NAVBAR */
-  .zaracho{
+
+  /* NAVBAR */
+  .zaracho {
     display: block;
     font-size: 25px;
     font-weight: 900;
@@ -127,11 +369,11 @@ nav {
     color: black;
   }
 
-  #navbarSupportedContent{
+  #navbarSupportedContent {
     display: none;
-   }
+  }
 
-   #navbarSupportedContentMobile{    
+  #navbarSupportedContentMobile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -141,24 +383,26 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: lightgoldenrodyellow;
-   }
+  }
 
-   #navbarSupportedContentMobile li{
+  #navbarSupportedContentMobile li {
     list-style-type: none;
     margin: 6px 0px 6px 0px;
-   }
+  }
 
-   #navbarSupportedContentMobile li a{
+  #navbarSupportedContentMobile li a {
     text-decoration: none;
     color: black;
-   }
+  }
 
-   .logo {
+  .logo {
     margin: 5px 0px 5px 60px;
     height: 60px;
     width: 60px;
     border-radius: 100px;
   }
+
+  /* CAROUSEL */
 
   #carousel {
     width: 100%;
@@ -166,57 +410,57 @@ nav {
     opacity: 0.9;
     z-index: 1;
   }
-  
+
   #carouselExampleIndicators {
     width: 100%;
     margin: 0px 0px 0px 0px;
   }
-  
 
-  .carousel-inner{
+
+  .carousel-inner {
     display: block;
     z-index: 99;
-    
+
   }
 
 
-  #text-one h1{
+  #text-one h1 {
     font-size: 30px;
     color: white;
   }
 
-  #text-one p{
+  #text-one p {
     font-size: 15px;
     color: red;
   }
 
-  #text-two h1{
+  #text-two h1 {
     font-size: 30px;
     color: white;
   }
 
-  #text-two p{
+  #text-two p {
     font-size: 15px;
     color: red;
   }
 
-  #left{
+  #left {
     display: none;
   }
 
-  #right{
+  #right {
     display: none;
   }
 
 
- 
+
 }
 
 /* Styles for mobile devices */
 @media (max-width: 480px) {
 
   /* NAVBAR */
-  .zaracho{
+  .zaracho {
     display: block;
     font-size: 25px;
     font-weight: 900;
@@ -225,11 +469,11 @@ nav {
     color: black;
   }
 
-  #navbarSupportedContent{
+  #navbarSupportedContent {
     display: none;
-   }
+  }
 
-   #navbarSupportedContentMobile{    
+  #navbarSupportedContentMobile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -239,73 +483,169 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: lightgoldenrodyellow;
-   }
+  }
 
-   #navbarSupportedContentMobile li{
+  #navbarSupportedContentMobile li {
     list-style-type: none;
-    margin: 6px 0px 6px 0px;
-   }
+    margin: 26px 0px 6px 0px;
+  }
 
-   #navbarSupportedContentMobile li a{
+  #navbarSupportedContentMobile li a {
     text-decoration: none;
-    color: black;
-   }
+    color:  #023020;
+  }
 
-   .logo {
+  .logo {
     margin: 5px 0px 5px 60px;
     height: 60px;
     width: 60px;
     border-radius: 100px;
   }
 
+  .we-do {
+  padding: 0px 0px 80px 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+.we-do h1 {
+  text-align: center;
+  color: red;
+  font-weight: 800;
+  margin: 120px 0px 0px 0px;
+}
+
+.we-do h2 {
+  margin-top: -160px;
+  margin-left: 160px;
+  color: white;
+  font-weight: 900;
+}
+
+
+.we-do-sub {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.we-do-sub img {
+  width: 320px;
+  border-radius: 20px;
+  margin-left: 15%;
+  margin-right: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.we-do-sub p {
+  width: 89%;
+  font-size: 16px;
+  color: red;
+  margin-left: 22%;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.we-do-sub h6 {
+  width: 89%;
+  font-size: 16px;
+  color: red;
+  margin-left: 19%;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.we-do-sub-sub {
+  margin: 30px 80px 30px 0px;
+  width: 100%;
+}
+
+.third-text {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 100%;
+}
+
+.third-text h1 {
+  color: red;
+  font-weight: 900;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+}
+
+
+.third-text p {
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+  color: green;
+}
+
+
+
+
+
+
+  /* CAROUSEL */
+
   #carousel {
     width: 100%;
-    height: 100vh;
+    height: 55vh;
     opacity: 0.9;
     z-index: 1;
   }
-  
+
   #carouselExampleIndicators {
     width: 100%;
     margin: 0px 0px 0px 0px;
   }
-  
 
-  .carousel-inner{
+
+  .carousel-inner {
     display: block;
     z-index: 99;
-    
+
   }
 
 
-  #text-one h1{
-    font-size: 30px;
+  #text-one h1 {
+    font-size: 25px;
     color: white;
   }
 
-  #text-one p{
+  #text-one p {
     font-size: 15px;
     color: red;
   }
 
-  #text-two h1{
+  #text-two h1 {
     font-size: 30px;
     color: white;
   }
 
-  #text-two p{
+
+
+  #text-two p {
     font-size: 15px;
     color: red;
   }
 
-  #left{
+  #left {
     display: none;
   }
 
-  #right{
+  #right {
     display: none;
   }
 
-  
- 
+
+
 }

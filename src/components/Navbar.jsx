@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAddressCard, faBars, faChartSimple, faClockRotateLeft, faFutbol, faSuitcase } from "@fortawesome/free-solid-svg-icons";
+import { faAddressCard, faBars, faChartSimple, faCircleInfo, faClockRotateLeft, faFutbol, faSuitcase } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faArrowAltCircleUp } from "@fortawesome/free-regular-svg-icons";
 
@@ -19,35 +19,35 @@ const Navbar = () => {
     : (document.body.style.overflow = "auto");
   return (
     <nav className="navbar-container">
-       <img src={logo} className="logo" alt="logo"/>
+      <Link to="/"> <img src={logo} className="logo" alt="logo"/></Link>
        
       <ul id="navbarSupportedContent">
         <li>
-          <NavLink activeclassname="active" to="/">
-            ABOUT US
+          <NavLink activeclassname="active" to="/about">
+            ABOUT
           </NavLink>
         </li>
 
         <li>
-          <NavLink activeclassname="active" to="/">
+          <NavLink activeclassname="active" to="/meat">
             MEAT
           </NavLink>
         </li>
 
         <li>
-          <NavLink activeclassname="active" to="/">
+          <NavLink activeclassname="active" to="/buy">
             BUY
           </NavLink>
         </li>
 
         <li>
-          <NavLink activeclassname="active" to="/">
+          <NavLink activeclassname="active" to="/services">
             SERVICES
           </NavLink>
         </li>
 
         <li>
-          <NavLink activeclassname="active" to="/">
+          <NavLink activeclassname="active" to="/contact">
             CONTACT
           </NavLink>
         </li>
@@ -63,25 +63,25 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link to="/">
-              <FontAwesomeIcon icon={faFutbol} />  ABOUT US
+              <Link to="/about">
+              <FontAwesomeIcon icon={faCircleInfo} />  ABOUT
               </Link>
             </li>
 
             <li>
-              <Link to="/standings">
+              <Link to="/meat">
               <FontAwesomeIcon icon={faChartSimple}  className="font"/> MEAT
               </Link>
             </li>
 
             <li>
-              <Link to="/top-scorers">
+              <Link to="/buy">
               <FontAwesomeIcon icon={faArrowAltCircleUp}  className="font"/> BUY 
               </Link>
             </li>
-            
+
             <li>
-              <Link to="/about">
+              <Link to="/services">
               <FontAwesomeIcon icon={faSuitcase} /> SERVICES
               </Link>
             </li>
