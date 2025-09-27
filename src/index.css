@@ -158,6 +158,297 @@ body{
   text-decoration: none; 
 }
 
+/* General layout */
+.landing-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #e6f7e6, #ffffff);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+.cta-btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #256628;
+}
+
+/* Products Section */
+.products {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2e7d32;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #e6f7e6;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 0.9rem;
+}
+
+
+.livestock-page {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.livestock-page h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.livestock-page p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.livestock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.livestock-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.livestock-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.livestock-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.livestock-card h3 {
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #2e7d32;
+}
+
+
+.meat-page {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.meat-page h1 {
+  font-size: 2.5rem;
+  color: #b71c1c;
+  margin-bottom: 10px;
+}
+
+.meat-page p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.meat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.meat-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.meat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.meat-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.meat-card h3 {
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #b71c1c;
+}
+
+
+
+.eggs-page {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fffbe6;
+}
+
+.eggs-page h1 {
+  font-size: 2.5rem;
+  color: #f57f17;
+  margin-bottom: 10px;
+}
+
+.eggs-page p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.eggs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eggs-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.eggs-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.eggs-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.eggs-card h3 {
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #f57f17;
+}
+
+.product-card {
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* inherit parent color */
+}
+
+.product-card:hover {
+  color: #2e7d32;          /* change color on hover (green example) */
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #2e7d32; /* Optional hover color */
+}
+
+
+
 @media only screen and (max-width: 800px) {
  .zaracho{
   display: block;
