@@ -2,10 +2,10 @@ import React from "react";
 
 export default function MeatPage() {
   const meats = [
-    { name: "Beef", img: "https://images.unsplash.com/photo-1606755962773-1f0f54c2c7ad?w=600" },
-    { name: "Pork", img: "https://images.unsplash.com/photo-1605479091312-5e3dbe2e6f32?w=600" },
-    { name: "Chicken", img: "https://images.unsplash.com/photo-1601050690597-7d0d8d1c1a3b?w=600" },
-    { name: "Goat Meat", img: "https://images.unsplash.com/photo-1588167096572-3f0bcb3c1c27?w=600" },
+    { name: "Beef", img: "https://images.unsplash.com/photo-1695683948382-868cd8d516fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVlZnxlbnwwfHwwfHx8MA%3D%3D" },
+    { name: "Pork", img: "https://images.unsplash.com/photo-1623047437095-27418540c288?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ya3xlbnwwfHwwfHx8MA%3D%3D" },
+    { name: "Chicken", img: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hpY2tlbiUyMG1lYXR8ZW58MHx8MHx8fDA%3D" },
+    { name: "Goat Meat", img: "https://plus.unsplash.com/premium_photo-1726138640100-37e644d59628?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29hdCUyMG1lYXR8ZW58MHx8MHx8fDA%3D" },
   ];
 
   return (
